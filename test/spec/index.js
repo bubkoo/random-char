@@ -1,12 +1,9 @@
-'use strict';
-
-var char   = require('chai');
-var expect = char.expect;
+var expect = require('chai').expect;
 
 
 describe('random-char: ', function () {
 
-  var randomChar = require('../../index');
+  var randomChar = require('../../');
 
   it('randomChar()', function () {
     expect(randomChar()).to.match(/^[a-z]$/);

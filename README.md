@@ -3,10 +3,10 @@
 > Generate a random character.
 
 
-[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/random-char/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/mock-end/random-char/blob/master/LICENSE)
 
-[![build:?](https://img.shields.io/travis/bubkoo/random-char/master.svg?style=flat-square)](https://travis-ci.org/bubkoo/random-char)
-[![coverage:?](https://img.shields.io/coveralls/bubkoo/random-char/master.svg?style=flat-square)](https://coveralls.io/github/bubkoo/random-char)
+[![build:?](https://img.shields.io/travis/mock-end/random-char/master.svg?style=flat-square)](https://travis-ci.org/mock-end/random-char)
+[![coverage:?](https://img.shields.io/coveralls/mock-end/random-char/master.svg?style=flat-square)](https://coveralls.io/github/mock-end/random-char)
 
 
 ## Install
