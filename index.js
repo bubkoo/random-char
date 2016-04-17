@@ -2,14 +2,17 @@
 
 var randomNatural = require('random-natural');
 
-module.exports = function (pool) {
+var pools = {
+  lower: 'abcdefghijklmnopqrstuvwxyz',
+  upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  number: '0123456789',
+  symbol: '!@#$%^&*()[]'
+};
 
-  var pools = {
-    lower: 'abcdefghijklmnopqrstuvwxyz',
-    upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-    number: '0123456789',
-    symbol: '!@#$%^&*()[]'
-  };
+pools.alpha = pools.lower + pools.upper;
+pools['undefined'] = pools.lower + pools.upper + pools.number + pools.symbol;
+
+module.exports = function (pool) {
 
   pool = pool || 'lower';
   pool = pools[pool] || pool;
