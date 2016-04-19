@@ -22,7 +22,7 @@ describe('random-char: ', function () {
   });
 
   it('randomChar("symbol")', function () {
-    expect(randomChar('symbol')).to.match(/^[\!\@\#\$\%\^\&\*\(\)\[\]]$/);
+    expect(randomChar('symbol')).to.match(/^[\~\!\@\#\$\%\^\&\(\)\*\_\+\-\=\{\}\[\]]$/);
   });
 
   it('randomChar("aeiou")', function () {

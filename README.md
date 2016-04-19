@@ -45,7 +45,8 @@ Preset pools:
 - `'number'` - `'0123456789'`
 - `'symbol'` - `'!@#$%^&*()[]'`
 - `'alpha'` - `'lower'` + `'upper'`
-- `'undefined'` - `'lower'` + `'upper'` + `number` + `'symbol'`
+- `'all'` - `'lower'` + `'upper'` + `number` + `'symbol'`
+- `'undefined'` - `'all'`
 
 Custom pool: `randomChar('something');`
 
