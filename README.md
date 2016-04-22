@@ -23,16 +23,6 @@ var randomChar = require('random-char');
 // API
 // - randomChar();
 // - randomChar(pool);
-
-
-randomChar();
-// => 'g'
-
-randomChar('upper');
-// => 'M'
-
-randomChar('aeiou');
-// => 'i'
 ```
 
 By default `randomChar()` will return a string with random character from the following pool.
@@ -43,14 +33,27 @@ By default `randomChar()` will return a string with random character from the fo
 
 Optionally specify a pool `randomChar(pool)` and the character will be generated with characters only from that pool.
 
-- `'lower'` - `'abcdefghijklmnopqrstuvwxyz'`
-- `'upper'` - `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`
-- `'number'` - `'0123456789'`
-- `'symbol'` - `'~!@#$%^&()*_+-={}[]'`
-- `'alpha'` - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
-- `'all'` - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
+- 'lower' - `'abcdefghijklmnopqrstuvwxyz'`
+- 'upper' - `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`
+- 'number' - `'0123456789'`
+- 'symbol' - `'~!@#$%^&()*_+-={}[]'`
+- 'alpha' - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
+- 'all' - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
 
-You can also **specify** your own pool: `randomChar('some string');`
+Examples:
+
+```js
+randomChar('upper');
+// => 'M'
+```
+
+You can also **specify** your own pool: 
+
+```js
+randomChar('aeiou');
+// => 'i'
+```
+
 
 
 ## Related
