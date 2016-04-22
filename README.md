@@ -21,6 +21,11 @@ $ npm install --save random-char
 ```js
 var randomChar = require('random-char');
 
+// API
+// - randomChar();
+// - randomChar(pool);
+
+
 randomChar();
 // => 'g'
 
@@ -31,50 +36,25 @@ randomChar('aeiou');
 // => 'i'
 ```
 
+By default `randomChar()` will return a string with random character from the following pool.
 
-## API
+```js
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'
+```
 
-### randomChar(pool)
-
-Randomly pick a char from a pool.
-
-Preset pools:
+Optionally specify a pool `randomChar(pool)` and the character will be generated with characters only from that pool.
 
 - `'lower'` - `'abcdefghijklmnopqrstuvwxyz'`
 - `'upper'` - `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`
 - `'number'` - `'0123456789'`
-- `'symbol'` - `'!@#$%^&*()[]'`
-- `'alpha'` - `'lower'` + `'upper'`
-- `'all'` - `'lower'` + `'upper'` + `number` + `'symbol'`
-- `'undefined'` - `'all'`
+- `'symbol'` - `'~!@#$%^&()*_+-={}[]'`
+- `'alpha'` - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
+- `'all'` - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
 
-Custom pool: `randomChar('something');`
+**Custom** your pool: `randomChar('some string');`
 
 
 ## Related
-
-- [random-integral](https://github.com/mock-end/random-integral) - Generate a random integer.
-- [random-natural](https://github.com/mock-end/random-natural) - Generate a random natural number.
-- [random-decimal](https://github.com/mock-end/random-decimal) - Generate a random decimal.
-- [random-index](https://github.com/mock-end/random-index) - Generate a random array-like index.
-- [random-hexadecimal](https://github.com/mock-end/random-hexadecimal) - Generate a random hexadecimal number.
-- [random-octal](https://github.com/mock-end/random-octal) - Generate a random octal.
-- [random-unicode](https://github.com/mock-end/random-unicode) - Generate a random unicode.
-- [random-bool](https://github.com/mock-end/random-bool) - Generate a random boolean (true/false).
-- [random-lorem](https://github.com/mock-end/random-lorem) - Generate a random world.
-- [random-title](https://github.com/mock-end/random-title) - Generate a random title.
-- [random-sentence](https://github.com/mock-end/random-sentence) - Generate a random sentence.
-- [random-paragraph](https://github.com/mock-end/random-paragraph) - Generate a random paragraph.
-- [random-tld](https://github.com/mock-end/random-tld) - Return a random tld.
-- [random-domains](https://github.com/mock-end/random-domains) - Generate a random domain name.
-- [random-uri](https://github.com/mock-end/random-uri.git) - Generate a random url.
-- [random-email](https://github.com/mock-end/random-email) - Generate a random email.
-- [random-lang](https://github.com/mock-end/random-lang) - Return a random language name.
-- [random-mobile](https://github.com/mock-end/random-mobile) - Generate a random chinese mobile phone number.
-- [random-zipcode](https://github.com/mock-end/random-zipcode) - Generate a random chinese zipcode.
-- [random-ipv4](https://github.com/mock-end/random-ipv4) - Generate a random ipv4 address.
-- [random-ipv6](https://github.com/mock-end/random-ipv6) - Generate a random ipv6 address.
-- [random-color](https://github.com/mock-end/random-color) - Generate a random color.
 
 ## Contributing
 
