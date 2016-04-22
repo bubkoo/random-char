@@ -50,7 +50,7 @@ Optionally specify a pool `randomChar(pool)` and the character will be generated
 - `'alpha'` - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
 - `'all'` - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
 
-**Custom** your own pool: `randomChar('some string');`
+You can also **specify** your own pool: `randomChar('some string');`
 
 
 ## Related
