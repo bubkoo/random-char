@@ -1,7 +1,7 @@
 {
   "name": "random-char",
   "version": "1.0.2",
-  "description": "Generate a random character.",
+  "description": "Return a random character.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",

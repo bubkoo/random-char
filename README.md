@@ -1,7 +1,6 @@
 # random-char
   
-> Generate a random character.
-
+> Return a random character.
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/mock-end/random-char/blob/master/LICENSE)
 
