@@ -6,7 +6,11 @@ describe('random-char: ', function () {
   var randomChar = require('../../');
 
   it('randomChar()', function () {
-    expect(randomChar()).to.match(/^[a-z]$/);
+    expect(randomChar()).to.be.a('string');
+  });
+
+  it('randomChar("")', function () {
+    expect(randomChar('')).to.be.a('string');
   });
 
   it('randomChar("lower")', function () {

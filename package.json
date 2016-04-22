@@ -9,6 +9,7 @@
     "test": "mocha -R spec",
     "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
     "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "watch": "onchange 'index.js' 'test/**/*.js' -e 'test/coverage/**/*.js' -- npm test",
     "prepublish": "npm test"
   },
   "repository": {
@@ -16,13 +17,17 @@
     "url": "git+https://github.com/mock-end/random-char.git"
   },
   "keywords": [
+    "char",
+    "character",
     "generator",
     "generate",
     "random",
     "randomly",
-    "rand",
-    "char",
-    "character"
+    "randomize",
+    "chance",
+    "test",
+    "dice",
+    "mock"
   ],
   "license": "MIT",
   "author": {
@@ -34,13 +39,17 @@
   },
   "homepage": "https://github.com/mock-end/random-char#readme",
   "devDependencies": {
-    "jshint": "^2.9.1",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5"
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5",
+    "onchange": "^2.4.0"
   },
   "dependencies": {
-    "random-natural": "^1.0.0"
+    "is-nil": "^1.0.1",
+    "onchange": "^2.4.0",
+    "random-natural": "^1.0.0",
+    "to-str": "^1.0.0"
   }
 }
