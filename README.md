@@ -14,7 +14,6 @@
 $ npm install --save random-char 
 ```
 
-
 ## Usage
 
 ```js
@@ -27,36 +26,35 @@ var randomChar = require('random-char');
 
 By default `randomChar()` will return a string with random character from the following pool.
 
-```js
+```
 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'
 ```
 
-Optionally specify a pool `randomChar(pool)` and the character will be generated with characters only from that pool.
+Optionally specify a pool and the character will be generated with characters only from that pool.
 
-- 'lower' - `'abcdefghijklmnopqrstuvwxyz'`
-- 'upper' - `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`
-- 'number' - `'0123456789'`
-- 'symbol' - `'~!@#$%^&()*_+-={}[]'`
-- 'alpha' - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
-- 'all' - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
+Specify pool by name:
 
-Examples:
+- lower - `'abcdefghijklmnopqrstuvwxyz'`
+- upper - `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`
+- number - `'0123456789'`
+- symbol - `'~!@#$%^&()*_+-={}[]'`
+- alpha - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
+- all - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
+
+
+See the following example:
 
 ```js
 randomChar('upper');
 // => 'M'
 ```
 
-You can also **specify** your own pool: 
+Specify pool by candidate characters: 
 
 ```js
 randomChar('aeiou');
 // => 'i'
 ```
-
-
-
-## Related
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 {
   "name": "random-char",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Return a random character.",
   "main": "index.js",
   "scripts": {
@@ -49,7 +49,7 @@
   "dependencies": {
     "is-nil": "^1.0.1",
     "onchange": "^2.4.0",
-    "random-natural": "^1.0.0",
+    "random-natural": "^1.0.2",
     "to-str": "^1.0.0"
   }
 }
