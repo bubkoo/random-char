@@ -42,8 +42,6 @@ Specify pool by name:
 - all - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
 
 
-See the following example:
-
 ```js
 randomChar('upper');
 // => 'M'
