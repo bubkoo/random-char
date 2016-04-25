@@ -16,6 +16,9 @@ $ npm install --save random-char
 
 ## Usage
 
+> For more use-cases see the [tests](https://github.com/mock-end/random-char/blob/master/test/spec/index.js)
+
+
 ```js
 var randomChar = require('random-char');
 
