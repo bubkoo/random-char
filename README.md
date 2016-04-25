@@ -20,39 +20,59 @@ $ npm install --save random-char
 var randomChar = require('random-char');
 
 // API
-// - randomChar();
-// - randomChar(pool);
+// - randomChar([poolName]);
+// - randomChar([options]);
 ```
 
-By default `randomChar()` will return a string with random character from the following pool.
-
+By default it will return a string with random character from the following pool:
 ```
 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'
 ```
 
-Optionally specify a pool and the character will be generated with characters only from that pool.
-
-Specify pool by name:
-
-- lower - `'abcdefghijklmnopqrstuvwxyz'`
-- upper - `'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`
-- number - `'0123456789'`
-- symbol - `'~!@#$%^&()*_+-={}[]'`
-- alpha - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`
-- all - `'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'`
-
+Optionally specify a pool:
 
 ```js
-randomChar('upper');
-// => 'M'
+randomChar('alpha'); // or
+randomChar({alpha: true});
+// => 'm'
+
+randomChar('upper'); // or
+randomChar({upper: true});
+// => 'Z'
+
+randomChar('lower'); // or
+randomChar({lower: true});
+// => 'j'
+
+randomChar('number'); // or
+randomChar({number: true});
+// => '7'
+
+randomChar('symbols'); // or
+randomChar({symbols: true});
+// => '%'
 ```
 
-Specify pool by candidate characters: 
+Optionally specify a pool and the character will be generated with characters only from that pool:
 
 ```js
-randomChar('aeiou');
-// => 'i'
-```
+randomChar('abcde'); // or
+randomChar({pool: 'abcde'});
+// => 'c'
+
+
+## Related
+
+- [random-integral](https://github.com/mock-end/random-integral) - Return a random integer.
+- [random-natural](https://github.com/mock-end/random-natural) - Return a random natural number.
+- [random-decimal](https://github.com/mock-end/random-decimal) - Return a random decimal.
+- [random-floating](https://github.com/mock-end/random-floating) - Return a random floating point number.
+- [random-index](https://github.com/mock-end/random-index) - Return a random array-like index.
+- [random-bool](https://github.com/mock-end/random-bool) - Return a random boolean (true/false).
+- [random-binary](https://github.com/mock-end/random-binary) - Return a random binary number.
+- [random-octal](https://github.com/mock-end/random-octal) - Return a random octal number.
+- [random-hexadecimal](https://github.com/mock-end/random-hexadecimal) - Return a random hexadecimal number.
+- [random-unicode](https://github.com/mock-end/random-unicode) - Return a random unicode. 
 
 ## Contributing
 

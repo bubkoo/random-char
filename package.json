@@ -48,8 +48,8 @@
   },
   "dependencies": {
     "is-nil": "^1.0.1",
-    "onchange": "^2.4.0",
-    "random-natural": "^1.0.2",
+    "is-object": "^1.0.1",
+    "random-natural": "^1.0.3",
     "to-str": "^1.0.0"
   }
 }

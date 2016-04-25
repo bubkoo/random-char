@@ -33,4 +33,27 @@ describe('random-char: ', function () {
     expect(randomChar("aeiou")).to.match(/^[aeiou]$/);
   });
 
+  it("randomChar({ alpha: true })", function () {
+    expect(randomChar({ alpha: true })).to.be.match(/^[a-zA-Z]$/);
+  });
+
+  it("randomChar({ lower: true })", function () {
+    expect(randomChar({ lower: true })).to.be.match(/^[a-z]$/);
+  });
+
+  it("randomChar({ upper: true })", function () {
+    expect(randomChar({ upper: true })).to.be.match(/^[A-Z]$/);
+  });
+
+  it("randomChar({ number: true })", function () {
+    expect(randomChar({ number: true })).to.be.match(/^[0-9]$/);
+  });
+
+  it("randomChar({ symbol: true })", function () {
+    expect(randomChar({ symbol: true })).to.be.match(/^[\~\!\@\#\$\%\^\&\(\)\*\_\+\-\=\{\}\[\]]$/);
+  });
+
+  it("randomChar({ pool: 'aeiou' })", function () {
+    expect(randomChar({ pool: 'aeiou' })).to.be.match(/^[aeiou]$/);
+  });
 });
