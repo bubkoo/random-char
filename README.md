@@ -22,6 +22,9 @@ var randomChar = require('random-char');
 // API
 // - randomChar([poolName]);
 // - randomChar([options]);
+
+randomChar();
+// => 'k'
 ```
 
 By default it will return a string with random character from the following pool:
