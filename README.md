@@ -28,6 +28,7 @@ randomChar();
 ```
 
 By default it will return a string with random character from the following pool:
+
 ```
 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&()*_+-={}[]'
 ```
@@ -62,7 +63,7 @@ Optionally specify a pool and the character will be generated with characters on
 randomChar('abcde'); // or
 randomChar({pool: 'abcde'});
 // => 'c'
-
+```
 
 ## Related
 
@@ -76,6 +77,7 @@ randomChar({pool: 'abcde'});
 - [random-hexadecimal](https://github.com/mock-end/random-hexadecimal) - Return a random hexadecimal number.
 - [random-unicode](https://github.com/mock-end/random-unicode) - Return a random unicode. 
 - [random-bool](https://github.com/mock-end/random-bool) - Return a random boolean (true/false).
+
 
 ## Contributing
 
